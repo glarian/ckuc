@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head th:include="fragments/head :: head">
+<meta charset="utf-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+<title>Calvary Korean Uniting Church</title>
+</head>
+<body>
+	<nav th:replace="fragments/header :: navigation"></nav>
+	<div th:replace="fragments/header :: ckuc-logo"></div>
+	<div class="owl-carousel owl-theme">
+		<div>
+			<img src="img/church-inside-1-2000x600.jpg" />
+		</div>
+		<div>
+			<img src="img/church-inside-2-2000x600.jpg" />
+		</div>
+		<div>
+			<img src="img/church-inside-3-2000x600.jpg" />
+		</div>
+		<div>
+			<img src="img/church-inside-6-2000x600.jpg" />
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>새신자 안내</h1>
+		<p></p>
+		<h1>예배시간안내</h1>
+		<p>주일예배: 주일정오 12시<br/>새벽예배: 화 ~ 목요일 오전 5시 30분<br/>금요기도회: 금요일 저녁 8시</p>
+		<h1>Events</h1>
+		<h2>EVENT 1</h2>
+		<p>event 1</p>
+		<h2>EVENT 2</h2>
+		<p>event 2</p>
+		<h2>EVENT 3</h2>
+		<p>event 3</p>
+		<h1>교회소식</h1>
+		<p></p>
+		<h1>설교 음원 링크</h1>
+		<p><i class="fa fa-youtube-square"></i></p>
+	</div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+
+	<script>
+		$(document).ready(function() {
+			$(".owl-carousel").owlCarousel({
+				items : 1,
+				loop : true,
+				autoWidth : true,
+				autoplay : true,
+				autoplayTimeout : 3000,
+				autoplayHoverPause : false,
+
+			});
+		});
+	</script>
+
+</body>
+</html>

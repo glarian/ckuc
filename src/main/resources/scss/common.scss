@@ -1,0 +1,46 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navbar-inverse {
+  //background-color: #34495E;
+  background: rgba(52, 73, 94, 0.85);
+}
+
+.navbar-inverse .navbar-nav {
+  li {
+    a:hover, a:focus {
+      background-color: #3498DB;
+    }
+    ul {
+      background-color: #34495E;
+      li {
+        a:hover, a:focus {
+          background-color: #3498DB;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: rgb(63, 67, 89);
+  color:#ffffff;
+  h3 {
+    color:#B0B2B8;
+  }
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

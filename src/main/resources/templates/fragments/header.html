@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="head :: head"></head>
+<body>
+	<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" th:fragment="navigation">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right" type="button"
+				data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="navbarSupportedContent" class="navbar-collapse collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="#" th:href="@{/}"><i
+							class="fa fa-home"></i> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" th:href="@{/about}"><i
+							class="fa fa-info"></i> About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" th:href="@{/service}"><i
+							class="fa fa-calendar-o"></i> Service</a></li>
+					<li class="nav-item dropdown"><a href="#"
+						class="nav-link dropdown-toggle" data-toggle="dropdown"
+						id="navbarGroupLink" aria-haspopup="true" aria-expanded="false"><i
+							class="fa fa-users"></i> Group </a>
+						<div class="dropdown-menu" aria-labelledby="navbarGroupLink">
+							<a class="dropdown-item" href="#">Love</a> <a
+								class="dropdown-item" href="#">Belief</a> <a
+								class="dropdown-item" href="#">Youth</a> <a
+								class="dropdown-item" href="#">Choir</a> <a
+								class="dropdown-item" href="#">Todak</a>
+						</div></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i
+							class="fa fa-newspaper-o"></i> News</a></li>
+					<li class="nav-item dropdown"><a href="#"
+						class="nav-link dropdown-toggle" id="navbarBlogLink"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-comments-o"></i> Blog
+					</a>
+						<div class="dropdown-menu" aria-labelledby="navbarBlogLink">
+							<a class="dropdown-item" href="#"><i
+								class="fa fa-newspaper-o"></i> Articles</a> <a
+								class="dropdown-item" href="#"><i class="fa fa-picture-o"></i>
+								Gallery</a>
+						</div></li>
+					<li class="nav-item"><a href="#" th:href="@{/contact}" class="nav-link"><i
+							class="fa fa-envelope-o"></i> Contact us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Locale</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="padding-top:50px;" th:fragment="ckuc-logo"><img src="img/ckuc_new_logo.png"/></div>
+</body>
+</html>

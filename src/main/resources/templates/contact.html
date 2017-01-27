@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/head :: head"></head>
+<body>
+	<nav th:replace="fragments/header :: navigation"></nav>
+	<div th:replace="fragments/header :: ckuc-logo"></div>
+	<div class="container">
+		<h1 align="center">교회연락처 및 위치</h1>
+		<div class="map-responsive" align="center">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.5055922368865!2d153.1046488153666!3d-27.546815182858648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915b5fdb3b2013%3A0xc1f0f292f82b0506!2sCalvary+Korean+Uniting+Church!5e0!3m2!1sen!2sau!4v1471347450082"
+				width="600" height="450" frameborder="0" style="border: 0;"
+				allowfullscreen="1"></iframe>
+		</div>
+		<p>
+			담임목사: 정재권<br />
+			<i class='fa fa-mobile'></i> 0424 991 017<br />
+			<i class='fa fa-envelope-o'></i> info@ckuc.org.au<br />
+			<i class='fa fa-map-marker'></i> 481 Broadwater Road<br />Mansfield
+			QLD 4122
+		</p>
+	</div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

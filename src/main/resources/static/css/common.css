@@ -1,0 +1,42 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navbar-inverse {
+  background: rgba(52, 73, 94, 0.85);
+}
+
+.navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
+  background-color: #3498DB;
+}
+.navbar-inverse .navbar-nav li ul {
+  background-color: #34495E;
+}
+.navbar-inverse .navbar-nav li ul li a:hover, .navbar-inverse .navbar-nav li ul li a:focus {
+  background-color: #3498DB;
+}
+
+.footer {
+  background-color: #3f4359;
+  color: #ffffff;
+}
+.footer h3 {
+  color: #B0B2B8;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=common.css.map */
